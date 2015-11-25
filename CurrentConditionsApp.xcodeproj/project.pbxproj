@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D11271D1C02996600ACCA4F /* BackgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D11271C1C02996600ACCA4F /* BackgroundImage.jpg */; settings = {ASSET_TAGS = (); }; };
 		7D690E7E1C0286FE00F81280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D690E7D1C0286FE00F81280 /* AppDelegate.swift */; };
 		7D690E801C0286FE00F81280 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D690E7F1C0286FE00F81280 /* ViewController.swift */; };
 		7D690E831C0286FE00F81280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D690E811C0286FE00F81280 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D11271C1C02996600ACCA4F /* BackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BackgroundImage.jpg; path = ../BackgroundImage.jpg; sourceTree = "<group>"; };
 		7D690E7A1C0286FE00F81280 /* CurrentConditionsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrentConditionsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D690E7D1C0286FE00F81280 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D690E7F1C0286FE00F81280 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				7D690E7F1C0286FE00F81280 /* ViewController.swift */,
 				7D690E811C0286FE00F81280 /* Main.storyboard */,
 				7D690E841C0286FE00F81280 /* Assets.xcassets */,
+				7D11271C1C02996600ACCA4F /* BackgroundImage.jpg */,
 				7D690E861C0286FE00F81280 /* LaunchScreen.storyboard */,
 				7D690E891C0286FE00F81280 /* Info.plist */,
 			);
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D690E881C0286FE00F81280 /* LaunchScreen.storyboard in Resources */,
+				7D11271D1C02996600ACCA4F /* BackgroundImage.jpg in Resources */,
 				7D690E851C0286FE00F81280 /* Assets.xcassets in Resources */,
 				7D690E831C0286FE00F81280 /* Main.storyboard in Resources */,
 			);
@@ -483,6 +487,7 @@
 				7D690EA41C0286FF00F81280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D690EA51C0286FF00F81280 /* Build configuration list for PBXNativeTarget "CurrentConditionsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				7D690EA71C0286FF00F81280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D690EA81C0286FF00F81280 /* Build configuration list for PBXNativeTarget "CurrentConditionsAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				7D690EAA1C0286FF00F81280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
