@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+    
+    
     @IBAction func findOutButtonPressed(sender: UIButton) {
         
         var wasSuccessful = false
@@ -47,17 +49,24 @@ class ViewController: UIViewController {
                                 
                                 self.resultLabel.hidden = false
                                 
-                                if wasSuccessful == false {
-                                    
-                                    self.resultLabel.text = "Could not find weather for this ciy. Please try again."
-                                    
-                                    self.resultLabel.hidden = false
-                                    
-                                }
-                                
                             })
                             
                         }
+                        
+                    }
+                    
+                    if wasSuccessful == false {
+                        
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            
+                            self.resultLabel.text = "Could not find weather for this ciy. Please try again."
+                            
+                            self.resultLabel.hidden = false
+                            
+                            print(self.resultLabel.text)
+                            
+                        })
+                        
                         
                     }
                     
