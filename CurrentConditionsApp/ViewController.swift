@@ -19,8 +19,10 @@ class ViewController: UIViewController {
     
     @IBAction func findOutButtonPressed(sender: UIButton) {
         
-        var wasSuccessful = false
+        self.dismissKeyboard()
         
+        var wasSuccessful = false
+      
         let attemptedUrl = NSURL(string: "http://www.weather-forecast.com/locations/" + enterCityTextField.text!.stringByReplacingOccurrencesOfString(" ", withString: "-") + "/forecasts/latest")
         
         if let url = attemptedUrl {
