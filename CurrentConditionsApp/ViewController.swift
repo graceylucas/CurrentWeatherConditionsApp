@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+   
     
     
     @IBAction func findOutButtonPressed(sender: UIButton) {
@@ -48,6 +49,9 @@ class ViewController: UIViewController {
                                 print(weatherSummary)
                                 
                                 self.resultLabel.hidden = false
+                             
+                                    
+                            
                                 
                             })
                             
@@ -75,6 +79,8 @@ class ViewController: UIViewController {
             }
             
             task.resume()
+            
+            
         }
         else {
             
@@ -84,11 +90,16 @@ class ViewController: UIViewController {
             
         }
         
+        
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+            view.addGestureRecognizer(tap)
         
         
     }
@@ -97,6 +108,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     
     
 }
