@@ -12,10 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var enterCityTextField: UITextField!
     
-    @IBOutlet weak var resultLabel: UILabel!
-    
-   
-    
+    @IBOutlet weak var resultTextView: UITextView!
     
     @IBAction func findOutButtonPressed(sender: UIButton) {
         
@@ -46,11 +43,11 @@ class ViewController: UIViewController {
                             
                             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                                 
-                                self.resultLabel.text = weatherSummary
+                                self.resultTextView.text = weatherSummary
                                 
                                 print(weatherSummary)
                                 
-                                self.resultLabel.hidden = false
+                                self.resultTextView.hidden = false
                              
                                     
                             
@@ -65,11 +62,11 @@ class ViewController: UIViewController {
                         
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             
-                            self.resultLabel.text = "Could not find weather for this ciy. Please try again."
+                            self.resultTextView.text = "Could not find weather for this ciy. Please try again."
                             
-                            self.resultLabel.hidden = false
+                            self.resultTextView.hidden = false
                             
-                            print(self.resultLabel.text)
+                            print(self.resultTextView.text)
                             
                         })
                         
@@ -86,9 +83,9 @@ class ViewController: UIViewController {
         }
         else {
             
-            self.resultLabel.text = "Could not find weather for this ciy. Please try again."
+            self.resultTextView.text = "Could not find weather for this ciy. Please try again."
             
-            self.resultLabel.hidden = false
+            self.resultTextView.hidden = false
             
         }
         
